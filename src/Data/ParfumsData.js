@@ -1,199 +1,227 @@
-// i need to repalce imagePaths by real ones from Assets
-// products data version 1.0
+import perfume1Front from '../Assets/Perfumes/perfume1-front.jpg';
+import perfume1Back from '../Assets/Perfumes/perfume1-back.jpg';
+import perfume2Front from '../Assets/Perfumes/perfume2-front.jpg';
+import perfume2Back from '../Assets/Perfumes/perfume2-back.jpg';
+import perfume3Front from '../Assets/Perfumes/perfume3-front.jpg';
+import perfume3Back from '../Assets/Perfumes/perfume3-back.jpg';
+import perfume4Front from '../Assets/Perfumes/perfume4-front.jpg';
+import perfume4Back from '../Assets/Perfumes/perfume4-back.jpg';
+import perfume5Front from '../Assets/Perfumes/perfume5-front.jpg';
+import perfume5Back from '../Assets/Perfumes/perfume5-back.jpg';
+import perfume6Front from '../Assets/Perfumes/perfume6-front.jpg';
+import perfume6Back from '../Assets/Perfumes/perfume6-back.jpg';
+import perfume7Front from '../Assets/Perfumes/perfume7-front.jpg';
+import perfume7Back from '../Assets/Perfumes/perfume7-back.jpg';
+import perfume8Front from '../Assets/Perfumes/perfume8-front.jpg';
+import perfume8Back from '../Assets/Perfumes/perfume8-back.jpg';
 
 const productsData = [
   {
     productID: 1,
-    frontImg: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400&h=500&fit=crop",
-    productName: "Nuit Étoilée",
-    productBrand: "Essence Royale",
-    productPrice: 129,
-    originalPrice: 159,
-    productReviews: "8k+ reviews",
-    productCategory: "Femme",
-    productType: "Eau de Parfum",
-    productSize: "100ml",
-    rating: 4.8,
-    bestseller: true,
-    newArrival: false,
-    notes: {
-      top: ["Bergamote", "Poire", "Mandarine"],
-      heart: ["Jasmin", "Rose", "Pivoine"],
-      base: ["Vanille", "Musc", "Bois de santal"]
-    },
-    description: "Un parfum envoûtant aux notes florales et boisées, parfait pour les soirées élégantes."
-  },
-  {
-    productID: 2,
-    frontImg: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=500&fit=crop",
-    productName: "Océan Mystique",
-    productBrand: "Aqua Luxe",
-    productPrice: 89,
-    originalPrice: 109,
-    productReviews: "6k+ reviews",
-    productCategory: "Homme",
-    productType: "Eau de Toilette",
-    productSize: "75ml",
-    rating: 4.6,
-    bestseller: true,
-    newArrival: false,
-    notes: {
-      top: ["Citron vert", "Notes marines", "Menthe"],
-      heart: ["Lavande", "Géranium", "Gingembre"],
-      base: ["Cèdre", "Ambre", "Patchouli"]
-    },
-    description: "Une fragrance fraîche et marine, idéale pour un homme moderne et dynamique."
-  },
-  {
-    productID: 3,
-    frontImg: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=400&h=500&fit=crop",
-    productName: "Rose Impériale",
-    productBrand: "Maison Floralie",
-    productPrice: 149,
-    originalPrice: null,
-    productReviews: "9k+ reviews",
+    frontImg: perfume1Front,
+    backImg: perfume1Back,
+    productName: "Chanel No. 5",
+    productBrand: "Chanel",
+    productPrice: 135,
+    originalPrice: 165,
+    productReviews: "12k+ reviews",
+    category: "Floral",
     productCategory: "Femme",
     productType: "Eau de Parfum",
     productSize: "100ml",
     rating: 4.9,
-    bestseller: false,
-    newArrival: true,
-    notes: {
-      top: ["Rose de Damas", "Litchi", "Framboise"],
-      heart: ["Rose centifolia", "Magnolia", "Freesia"],
-      base: ["Musc blanc", "Cèdre", "Ambre gris"]
-    },
-    description: "L'essence pure de la rose de Grasse, un classique intemporel et raffiné."
-  },
-  {
-    productID: 4,
-    frontImg: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1565108752815-13e0c9a8c85c?w=400&h=500&fit=crop",
-    productName: "Cuir Sauvage",
-    productBrand: "Heritage & Co",
-    productPrice: 169,
-    originalPrice: 199,
-    productReviews: "5k+ reviews",
-    productCategory: "Homme",
-    productType: "Eau de Parfum",
-    productSize: "100ml",
-    rating: 4.7,
-    bestseller: false,
-    newArrival: true,
-    notes: {
-      top: ["Cardamome", "Poivre noir", "Safran"],
-      heart: ["Cuir", "Oud", "Encens"],
-      base: ["Patchouli", "Vétiver", "Musc"]
-    },
-    description: "Un parfum puissant et masculin avec des notes de cuir et d'épices orientales."
-  },
-  {
-    productID: 5,
-    frontImg: "https://images.unsplash.com/photo-1588405748880-12d1d2a59926?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=400&h=500&fit=crop",
-    productName: "Jardin d'Été",
-    productBrand: "Essence Royale",
-    productPrice: 79,
-    originalPrice: 99,
-    productReviews: "7k+ reviews",
-    productCategory: "Unisexe",
-    productType: "Eau de Toilette",
-    productSize: "50ml",
-    rating: 4.5,
     bestseller: true,
     newArrival: false,
     notes: {
-      top: ["Thé vert", "Citron", "Basilic"],
-      heart: ["Muguet", "Jasmin", "Herbe coupée"],
-      base: ["Mousse de chêne", "Musc blanc", "Bois de cèdre"]
+      top: ["Aldehydes", "Ylang-Ylang", "Neroli"],
+      heart: ["Jasmine", "Rose", "Lily of the Valley"],
+      base: ["Sandalwood", "Vanilla", "Vetiver"]
     },
-    description: "Une fragrance fraîche et verte, évoquant une promenade dans un jardin fleuri."
+    description: "The iconic fragrance that has captivated women for generations with its timeless floral bouquet."
   },
   {
-    productID: 6,
-    frontImg: "https://images.unsplash.com/photo-1590156206983-b94ec3b665f9?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?w=400&h=500&fit=crop",
-    productName: "Ambre Mystérieux",
-    productBrand: "Oriental Essence",
-    productPrice: 139,
-    originalPrice: null,
-    productReviews: "8k+ reviews",
-    productCategory: "Femme",
-    productType: "Eau de Parfum",
-    productSize: "75ml",
+    productID: 2,
+    frontImg: perfume2Front,
+    backImg: perfume2Back,
+    productName: "Dior Sauvage",
+    productBrand: "Dior",
+    productPrice: 120,
+    originalPrice: 145,
+    productReviews: "15k+ reviews",
+    category: "Fresh",
+    productCategory: "Homme",
+    productType: "Eau de Toilette",
+    productSize: "100ml",
     rating: 4.8,
     bestseller: true,
     newArrival: false,
     notes: {
-      top: ["Cannelle", "Orange sanguine", "Cardamome"],
-      heart: ["Ambre", "Ylang-ylang", "Jasmin sambac"],
-      base: ["Vanille de Madagascar", "Fève tonka", "Benjoin"]
+      top: ["Calabrian Bergamot", "Pepper"],
+      heart: ["Sichuan Pepper", "Lavender", "Pink Pepper"],
+      base: ["Ambroxan", "Cedar", "Labdanum"]
     },
-    description: "Un parfum oriental chaleureux et envoûtant aux notes ambrées et épicées."
+    description: "A wildly fresh and powerful fragrance for the modern man who lives by his own rules."
   },
   {
-    productID: 7,
-    frontImg: "https://images.unsplash.com/photo-1592542246819-74a1c4b6e1f6?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400&h=500&fit=crop",
-    productName: "Bois Précieux",
-    productBrand: "Heritage & Co",
-    productPrice: 159,
-    originalPrice: 189,
-    productReviews: "6k+ reviews",
-    productCategory: "Homme",
-    productType: "Eau de Parfum",
-    productSize: "100ml",
-    rating: 4.6,
-    bestseller: false,
-    newArrival: false,
-    notes: {
-      top: ["Bergamote", "Cardamome", "Gingembre"],
-      heart: ["Bois de santal", "Cèdre de l'Atlas", "Vétiver"],
-      base: ["Patchouli", "Ambre", "Musc"]
-    },
-    description: "Une composition boisée noble et raffinée pour l'homme distingué."
-  },
-  {
-    productID: 8,
-    frontImg: "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=400&h=500&fit=crop",
-    backImg: "https://images.unsplash.com/photo-1619994121345-b4a11a6aa2c0?w=400&h=500&fit=crop",
-    productName: "Fleur de Cerisier",
-    productBrand: "Maison Floralie",
-    productPrice: 94,
-    originalPrice: 119,
-    productReviews: "7k+ reviews",
+    productID: 3,
+    frontImg: perfume3Front,
+    backImg: perfume3Back,
+    productName: "YSL Black Opium",
+    productBrand: "Yves Saint Laurent",
+    productPrice: 125,
+    originalPrice: null,
+    productReviews: "11k+ reviews",
+    category: "Oriental",
     productCategory: "Femme",
-    productType: "Eau de Toilette",
-    productSize: "75ml",
+    productType: "Eau de Parfum",
+    productSize: "90ml",
     rating: 4.7,
     bestseller: true,
     newArrival: false,
     notes: {
-      top: ["Fleur de cerisier", "Mandarine", "Pêche"],
-      heart: ["Pivoine", "Lotus", "Jasmin"],
-      base: ["Musc blanc", "Bois de santal", "Ambre"]
+      top: ["Pink Pepper", "Orange Blossom", "Pear"],
+      heart: ["Coffee", "Jasmine", "Bitter Almond"],
+      base: ["Vanilla", "Patchouli", "Cedar"]
     },
-    description: "Une fragrance délicate et printanière inspirée des cerisiers en fleurs du Japon."
+    description: "A seductive and addictive gourmand fragrance with coffee and vanilla notes."
+  },
+  {
+    productID: 4,
+    frontImg: perfume4Front,
+    backImg: perfume4Back,
+    productName: "Bleu de Chanel",
+    productBrand: "Chanel",
+    productPrice: 140,
+    originalPrice: 170,
+    productReviews: "13k+ reviews",
+    category: "Woody",
+    productCategory: "Homme",
+    productType: "Eau de Parfum",
+    productSize: "100ml",
+    rating: 4.9,
+    bestseller: true,
+    newArrival: false,
+    notes: {
+      top: ["Grapefruit", "Lemon", "Mint"],
+      heart: ["Ginger", "Nutmeg", "Jasmine"],
+      base: ["Incense", "Vetiver", "Cedar"]
+    },
+    description: "An aromatic-woody fragrance that embodies freedom and determination."
+  },
+  {
+    productID: 5,
+    frontImg: perfume5Front,
+    backImg: perfume5Back,
+    productName: "Miss Dior",
+    productBrand: "Dior",
+    productPrice: 130,
+    originalPrice: 155,
+    productReviews: "10k+ reviews",
+    category: "Floral",
+    productCategory: "Femme",
+    productType: "Eau de Parfum",
+    productSize: "100ml",
+    rating: 4.8,
+    bestseller: false,
+    newArrival: true,
+    notes: {
+      top: ["Blood Orange", "Mandarin"],
+      heart: ["Rose", "Peony", "Lily of the Valley"],
+      base: ["Musk", "Patchouli", "Amber"]
+    },
+    description: "A fresh and romantic floral fragrance with a couture spirit."
+  },
+  {
+    productID: 6,
+    frontImg: perfume6Front,
+    backImg: perfume6Back,
+    productName: "Versace Eros",
+    productBrand: "Versace",
+    productPrice: 95,
+    originalPrice: 115,
+    productReviews: "9k+ reviews",
+    category: "Fresh",
+    productCategory: "Homme",
+    productType: "Eau de Toilette",
+    productSize: "100ml",
+    rating: 4.6,
+    bestseller: true,
+    newArrival: false,
+    notes: {
+      top: ["Mint", "Green Apple", "Lemon"],
+      heart: ["Tonka Bean", "Geranium", "Ambroxan"],
+      base: ["Vanilla", "Vetiver", "Oakmoss"]
+    },
+    description: "A passionate and seductive fragrance inspired by Greek mythology."
+  },
+  {
+    productID: 7,
+    frontImg: perfume7Front,
+    backImg: perfume7Back,
+    productName: "Tom Ford Tobacco Vanille",
+    productBrand: "Tom Ford",
+    productPrice: 285,
+    originalPrice: 320,
+    productReviews: "8k+ reviews",
+    category: "Oriental",
+    productCategory: "Unisexe",
+    productType: "Eau de Parfum",
+    productSize: "50ml",
+    rating: 4.9,
+    bestseller: false,
+    newArrival: true,
+    notes: {
+      top: ["Tobacco Leaf", "Spicy Notes"],
+      heart: ["Vanilla", "Cocoa", "Tonka Bean"],
+      base: ["Dry Fruit Accord", "Wood Sap"]
+    },
+    description: "A luxurious and opulent oriental fragrance with tobacco and vanilla."
+  },
+  {
+    productID: 8,
+    frontImg: perfume8Front,
+    backImg: perfume8Back,
+    productName: "Lancôme La Vie Est Belle",
+    productBrand: "Lancôme",
+    productPrice: 140,
+    originalPrice: 165,
+    productReviews: "14k+ reviews",
+    category: "Floral",
+    productCategory: "Femme",
+    productType: "Eau de Parfum",
+    productSize: "100ml",
+    rating: 4.8,
+    bestseller: true,
+    newArrival: false,
+    notes: {
+      top: ["Black Currant", "Pear"],
+      heart: ["Iris", "Jasmine", "Orange Blossom"],
+      base: ["Praline", "Vanilla", "Patchouli"]
+    },
+    description: "A joyful and luminous fragrance celebrating life's beautiful moments."
   }
 ];
 
-// Marques disponibles
 export const brands = [
-  { id: 1, name: "Essence Royale" },
-  { id: 2, name: "Maison Floralie" },
-  { id: 3, name: "Aqua Luxe" },
-  { id: 4, name: "Heritage & Co" },
-  { id: 5, name: "Oriental Essence" }
+  { id: 1, name: "Chanel" },
+  { id: 2, name: "Dior" },
+  { id: 3, name: "Yves Saint Laurent" },
+  { id: 4, name: "Versace" },
+  { id: 5, name: "Tom Ford" },
+  { id: 6, name: "Lancôme" }
 ];
 
-// Catégories
 export const categories = [
   { id: 1, name: "Femme", slug: "femme" },
   { id: 2, name: "Homme", slug: "homme" },
   { id: 3, name: "Unisexe", slug: "unisexe" }
+];
+
+export const fragranceCategories = [
+  { id: 1, name: "Floral", slug: "floral" },
+  { id: 2, name: "Fresh", slug: "fresh" },
+  { id: 3, name: "Woody", slug: "woody" },
+  { id: 4, name: "Oriental", slug: "oriental" }
 ];
 
 export default productsData;

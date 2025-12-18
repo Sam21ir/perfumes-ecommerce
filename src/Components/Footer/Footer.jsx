@@ -154,8 +154,8 @@ const Footer = () => {
             <div className="footerCurrency">
               <p>Currency</p>
               <select name="currency" id="currency">
-                <option value="MAD">DH MAD</option>
                 <option value="USD">$ USD</option>
+                <option value="MAD">DH MAD</option>
                 <option value="EUR">€ EUR</option>
               </select>
             </div>

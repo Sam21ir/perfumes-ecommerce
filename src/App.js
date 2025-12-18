@@ -7,6 +7,7 @@ import "./App.css";
 
 import Header from "../src/Components/Header/Navbar";
 import Footer from "../src/Components/Footer/Footer";
+import Home from "../src/Pages/Home";
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-
+          <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
       </BrowserRouter>
